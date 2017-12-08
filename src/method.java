@@ -8,7 +8,4 @@ public class method {
 
         System.out.println(method(a)+ 2);
     }
-
-    sout
-//    fffdfd
 }
