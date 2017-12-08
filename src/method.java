@@ -17,5 +17,7 @@ public class method {
 
         degree(5,3);
 
+        fghfg
+                //gfgf
     }
 }
