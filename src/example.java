@@ -82,5 +82,79 @@
 //}
 
 
+abstract class Geometry{
+    abstract String toStrin();
+    abstract double area();
+
+}
+
+class Dot extends Geometry{
+    String toStrin(){
+        return "Point";
+    }
+    double area(){
+        return 0.0;
+    }
+}
+
+class Triagle extends Geometry{
+    int Cathetus1;
+    int Cathetus2;
+
+    String toStrin() {
+        return "Trigle";
+    }
+    Triagle(int Cathetus1, int Cathetus2){
+        this.Cathetus1=Cathetus1;
+        this.Cathetus2=Cathetus2;
+    }
+
+    double area(){
+        return (Cathetus1*Cathetus1)/2;
+
+    }
+}
+
+class Circle extends Geometry {
 
 
+    String toStrin() {
+        return "Ctrcle";
+    }
+        int Radius;
+    Circle(int Radius){
+        this.Radius=Radius;
+    }
+
+    double area(){
+        return (Radius*Radius)*3.14;
+    }
+}
+
+class result{
+    public static void main(String[] args) {
+        Dot dot = new Dot();
+        Triagle trigle = new Triagle(3,5);
+        Circle circle = new Circle(4);
+
+        double d_area = dot.area();
+        double t_area = trigle.area();
+        double c_area = circle.area();
+
+        Geometry[] all1={dot,trigle,circle};
+
+        double[] all={d_area,t_area,c_area};
+
+        for (int i =0; i<all.length; i++){
+            System.out.println(all[i]);
+        }
+
+        System.out.println("  ");
+
+        for (int i = 0; i<all1.length; i++){
+
+            System.out.println(all1[i].toStrin());
+            System.out.println(all1[i].area());
+        }
+    }
+}
