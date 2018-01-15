@@ -63,6 +63,7 @@
 //}
 
 
+
 //class Lego{
 //
 //    int block;
@@ -158,3 +159,32 @@ class result{
         }
     }
 }
+
+
+
+//interface A{
+//   void metodA();
+//}
+//
+//interface B extends A{
+//    void metodB();
+//}
+//
+//class Example implements B{
+////    public void metodA(){
+////        System.out.println(" Print A ");
+////    }
+//    public void metodB(){
+//        System.out.println(" Print B");
+//    }
+//
+//    public static void main(String[] args) {
+//
+//        Example EX = new Example();
+//
+////        EX.metodA();
+//        EX.metodB();
+//
+//
+//    }
+//}
