@@ -1,4 +1,4 @@
-public class Factorial {
+//public class Factorial1 {
 
 //    static int Fact=1;
 //
@@ -19,12 +19,12 @@ public class Factorial {
 //    }
 //}
 
-    static int FactRecurs(int number){
-
-        if (number == 1) return number;
-        return (number -1)*number;
-
-    }
+//    static int FactRecurs(int number){
+//
+//        if (number == 1) return number;
+//        return (number -1)*number;
+//
+//    }
 
 //    public static void main(String[] args) {
 //        int num=4;
@@ -33,4 +33,5 @@ public class Factorial {
 //        }
 //    }
 
-}
+
+//}
